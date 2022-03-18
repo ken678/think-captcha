@@ -1,5 +1,5 @@
 {
-    "name": "topthink/think-captcha",
+    "name": "yzncms/think-captcha",
     "description": "captcha package for thinkphp5",
     "authors": [
         {
@@ -8,7 +8,11 @@
         }
     ],
     "license": "Apache-2.0",
+    "support": {
+        "issues": "https://gitee.com/ken678/YZNCMS/issues"
+    },
     "require": {
+        "php": ">=7.0.0",
     	"topthink/framework": "5.1.*"
     },
     "autoload": {
