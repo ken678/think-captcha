@@ -41,10 +41,11 @@ function captcha_src($config = null)
  * @param $id
  * @return mixed
  */
-function captcha_img($id = '')
+function captcha_img($id = '', $domid = ''): string
 {
     $src = captcha_src($id);
-    return "<img src='{$src}' alt='captcha' onclick='this.src=\"{$src}?\"+Math.random();' />";
+    $domid = empty($domid) ? $domid : "id='" . $domid . "'";
+    return "<img src='{$src}' alt='captcha' " . $domid . " onclick='this.src=\"{$src}?\"+Math.random();' />";
 }
 
 /**
